@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zynk Brain</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div id="profile-setup">
+    <h1>Welcome to Zynk Brain</h1>
+    <p>Tell us about yourself to get personalized matches</p>
+    <form id="profileForm">
+      <label for="role">Select Role</label>
+      <select id="role" required>
+        <option value="">Choose role</option>
+        <option value="Founder">Founder</option>
+        <option value="Investor">Investor</option>
+        <option value="Mentor">Mentor</option>
+        <option value="Talent">Talent</option>
+      </select>
+
+      <label for="industry">Select Industry</label>
+      <select id="industry" required>
+        <option value="">Choose industry</option>
+        <option value="B2B SaaS">B2B SaaS</option>
+        <option value="FinTech">FinTech</option>
+        <option value="HealthTech">HealthTech</option>
+        <option value="EdTech">EdTech</option>
+        <option value="E-commerce">E-commerce</option>
+        <option value="CleanTech">CleanTech</option>
+      </select>
+
+      <label for="stage">Select Stage</label>
+      <select id="stage" required>
+        <option value="">Choose stage</option>
+        <option value="Idea">Idea</option>
+        <option value="Pre-seed">Pre-seed</option>
+        <option value="Seed">Seed</option>
+        <option value="Series A">Series A</option>
+        <option value="Series B">Series B</option>
+        <option value="Growth">Growth</option>
+      </select>
+
+      <label for="geography">Select Geography</label>
+      <select id="geography" required>
+        <option value="">Choose location</option>
+        <option value="North America">North America</option>
+        <option value="Europe">Europe</option>
+        <option value="MENA">MENA</option>
+        <option value="Southeast Asia">Southeast Asia</option>
+        <option value="Africa">Africa</option>
+        <option value="Latin America">Latin America</option>
+        <option value="Global">Global</option>
+      </select>
+
+      <button type="submit">Start Matching</button>
+    </form>
+  </div>
+
+  <div id="match-card" class="hidden">
+    <div id="user-info"></div>
+    <h2 id="match-name"></h2>
+    <p id="match-role"></p>
+    <p id="match-tags"></p>
+    <p id="match-score"></p>
+    <p id="match-reason"></p>
+    <div id="match-actions"></div>
+    <ul id="signals"></ul>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
