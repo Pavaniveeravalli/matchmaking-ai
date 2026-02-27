@@ -107,8 +107,10 @@ def get_matches(user: UserProfile):
 
 
 # ---------- STATIC FILES ----------
-app.mount("/static", StaticFiles(directory="../frontend"), name="static")
+app.mount("/static", StaticFiles(directory="frontend"), name="static")
+
 
 @app.get("/")
 def read_index():
-    return FileResponse(os.path.join("../frontend", "index.html"))
+    return FileResponse(os.path.join("frontend", "index.html"))
+
